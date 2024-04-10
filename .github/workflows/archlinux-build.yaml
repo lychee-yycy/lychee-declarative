@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dep
         run: |
-          pacman -Syu --noconfirm cmake pkgconfig git extra-cmake-modules qt6-base qt6-declarative mesa libepoxy libdrm libpipewire
+          pacman -Syu --noconfirm cmake pkgconfig git extra-cmake-modules qt6-base qt6-declarative
           pacman -Syu --noconfirm clang ninja
           pacman -Syu --noconfirm fakeroot sudo
 

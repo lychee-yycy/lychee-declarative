@@ -1,15 +1,8 @@
 set(QT_QML_OUTPUT_DIRECTORY  ${CMAKE_BINARY_DIR})
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-set(KF_DEP_VERSION "5.240.0")
-
 find_package(ECM REQUIRED NO_MODULE)
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(PipeWire IMPORTED_TARGET libpipewire-0.3 REQUIRED)
-pkg_check_modules(EGL IMPORTED_TARGET egl REQUIRED)
-pkg_check_modules(Epoxy IMPORTED_TARGET epoxy REQUIRED)
-pkg_check_modules(LibDRM IMPORTED_TARGET libdrm REQUIRED)
-
 find_package(Qt6 6.4 COMPONENTS Quick Core Qml REQUIRED)
 
 find_package(Doxygen)
@@ -75,10 +68,6 @@ target_compile_definitions(declarative
 target_link_libraries(declarative PRIVATE
     Qt6::Quick
     Qt6::QuickPrivate
-    PkgConfig::PipeWire
-    PkgConfig::EGL
-    PkgConfig::Epoxy
-    PkgConfig::LibDRM
 )
 
 target_include_directories(declarative PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

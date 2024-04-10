@@ -13,3 +13,4 @@ add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 
 add_subdirectory(src)
 add_subdirectory(examples)
+add_subdirectory(lychee_quickcontrols2style)

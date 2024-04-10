@@ -28,22 +28,6 @@ build dependencies(for arch linux):
 * extra-cmake-modules
 * qt6-base
 * qt6-declarative
-* mesa
-* libepoxy
-* libdrm
-* libpipewire
-
-build dependencies(for debian):
-* g++
-* libegl-dev
-* libepoxy-dev
-* libdrm-dev
-* cmake
-* extra-cmake-modules
-* qt6-declarative-dev
-* qt6-declarative-private-dev
-* qt6-base-dev
-* libpipewire-0.3-dev
   
 ## Configuration
 
